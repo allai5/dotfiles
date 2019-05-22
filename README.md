@@ -1,0 +1,3 @@
+# dotfiles
+
+Personal config files for my Linux setup! Setup script coming soon...
