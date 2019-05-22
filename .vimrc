@@ -14,7 +14,7 @@ set mouse=a                         "Mouse support in vim
 set ruler                           "Show bottom ruler
 set autoindent                      "Autoindent on new lines
 set textwidth=80                    "80-column text formatting
-set colorcolumn=81
+"set colorcolumn=81
 set conceallevel=1                  "Enable concealing charaters
 set title                           "Set window title to file
 set hlsearch                        "Highlight on search
@@ -29,6 +29,7 @@ set backspace=indent,eol,start      "Better backspacing
 set autoread                        "Automatically read when file is changed
 set autowrite                       "Automatically write when buffer changes
 set wildmenu                        "visual autocomplete for command menu
+set pastetoggle=<F3>
 
 " Tab Settings
 set tabstop=4 expandtab             "4 space tabs, expand tabs to spaces
