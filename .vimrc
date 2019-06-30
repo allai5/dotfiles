@@ -2,7 +2,6 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 syntax on
 
-set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/ "Always show statusline
 set laststatus=2
 set t_Co=256                        "Use 256 colours
 
@@ -41,4 +40,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 call pathogen#helptags()
 
-map <C-n> : NERDTreeToggle<CR>
+" Map Key Settings
+inoremap kj <Esc>
+"Remap ESC key to 'kj'
+map <C-n> : NERDTreeTabsToggle<CR>
