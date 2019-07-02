@@ -15,6 +15,6 @@ cd ~/.oh-my-zsh/custom/plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions
 git clone https://github.com/zdharma/fast-syntax-highlighting
 
-cd $CUR_DIR
+cd $CURR_DIR
 
 echo "Done installing! :)"
