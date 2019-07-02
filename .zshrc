@@ -1,9 +1,19 @@
+# zmodload zsh/zprof
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/alice/.oh-my-zsh"
+export ZSH="/home/alice/.oh-my-zsh"
+ZSH_DISABLE_COMPFIX=true
 
+autoload -Uz compinit
+
+for dump in ~/.zcompdump(N.mh+24);
+do
+  compinit
+done
+
+compinit -C
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -107,9 +117,6 @@ export EDITOR="vim"
 export USE_EDITOR=$EDITOR
 export VISUAL=$EDITOR
 
-source /opt/ros/melodic/setup.zsh
-
-export PATH="/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/alice/.vimpkg/bin"
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -121,3 +128,4 @@ export PATH="/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# zprof
