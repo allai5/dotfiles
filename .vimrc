@@ -13,7 +13,7 @@ set mouse=a                         "Mouse support in vim
 set ruler                           "Show bottom ruler
 set autoindent                      "Autoindent on new lines
 set textwidth=80                    "80-column text formatting
-"set colorcolumn=81
+set colorcolumn=80
 set conceallevel=1                  "Enable concealing charaters
 set title                           "Set window title to file
 set hlsearch                        "Highlight on search
