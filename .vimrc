@@ -3,6 +3,9 @@ execute pathogen#infect()
 filetype plugin on
 syntax on
 
+let g:tmuxline_theme = 'lightline'
+let g:tmuxline_preset = 'tmux'
+
 set laststatus=2
 set t_Co=256                        "Use 256 colours
 
@@ -44,4 +47,6 @@ call pathogen#helptags()
 " Map Key Settings
 inoremap kj <Esc>
 "Remap ESC key to 'kj'
+
 map <C-n> : NERDTreeTabsToggle<CR>
+

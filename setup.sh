@@ -10,6 +10,7 @@ ln -s $CURR_DIR/.vimrc ~/.vimrc
 ln -s $CURR_DIR/.bashrc ~/.bashrc
 ln -s $CURR_DIR/.zshrc ~/.zshrc
 ln -s $CURR_DIR/.tmux.conf ~/.tmux.conf
+ln -s $CURR_DIR/.tmux-status.conf ~/.tmux-status.conf
 
 cd ~/.oh-my-zsh/custom/plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions
