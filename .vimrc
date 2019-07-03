@@ -1,5 +1,6 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
+filetype plugin on
 syntax on
 
 set laststatus=2

@@ -3,7 +3,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/alice/.oh-my-zsh"
+export ZSH="/home/$USER/.oh-my-zsh"
 ZSH_DISABLE_COMPFIX=true
 
 autoload -Uz compinit
