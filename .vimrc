@@ -6,6 +6,13 @@ syntax on
 let g:tmuxline_theme = 'lightline'
 let g:tmuxline_preset = 'tmux'
 
+" Trigger Configuration for UltiSnips
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:ultisnips_python_style = "google"
+let g:UltiSnipsEditSplit="vertical"
+
 set laststatus=2
 set t_Co=256                        "Use 256 colours
 
