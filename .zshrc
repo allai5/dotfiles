@@ -160,3 +160,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+source /opt/ros/melodic/setup.zsh
+source ~/darpa_ws/devel/setup.zsh
