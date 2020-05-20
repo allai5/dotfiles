@@ -159,6 +159,10 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
+export PATH=/home/alice/.local/bin:$PATH:/usr/local/cuda/bin
+export PYTHONPATH=/home/alice/.local/lib/python2.7:$PYTHONPATH
+export KEF_ENV=/home/alice/kef_env
 source /opt/ros/melodic/setup.zsh
-source ~/darpa_ws/devel/setup.zsh
+source /home/alice/kef_env/catkin_ws/devel/setup.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

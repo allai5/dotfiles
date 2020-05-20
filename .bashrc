@@ -123,3 +123,10 @@ export TERM=xterm-256color
 source /opt/ros/melodic/setup.bash
 
 export PATH="/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/alice/.vimpkg/bin"
+export PATH=/home/alice/.local/bin:$PATH:/usr/local/cuda/bin
+export PYTHONPATH=/home/alice/.local/lib/python2.7:$PYTHONPATH
+export KEF_ENV=/home/alice/kef_env
+source /opt/ros/melodic/setup.bash
+source /home/alice/kef_env/catkin_ws/devel/setup.bash
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

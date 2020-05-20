@@ -5,7 +5,6 @@ syntax on
 
 let g:tmuxline_theme = 'lightline'
 let g:tmuxline_preset = 'tmux'
-
 " Trigger Configuration for UltiSnips
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
@@ -16,9 +15,11 @@ let g:UltiSnipsEditSplit="vertical"
 set laststatus=2
 set t_Co=256                        "Use 256 colours
 
-colorscheme monokai                 "Make vim look like Sublime
+"colorscheme luna-term
+colorscheme palenight
 
 " General Settings
+set background=dark
 set encoding=utf-8                  "UTF-8 character encoding
 set mouse=a                         "Mouse support in vim
 set ruler                           "Show bottom ruler
@@ -42,9 +43,9 @@ set wildmenu                        "visual autocomplete for command menu
 set pastetoggle=<F3>
 
 " Tab Settings
-set tabstop=4 expandtab             "4 space tabs, expand tabs to spaces
+set tabstop=2 expandtab             "4 space tabs, expand tabs to spaces
 set shiftround                      "Shifts move to indent location
-
+set rtp+=~/.fzf
 
 "Strip whitespace from end of lines when writing file
 autocmd BufWritePre * :%s/\s\+$//e
