@@ -1,5 +1,6 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
+
+"runtime bundle/vim-pathogen/autoload/pathogen.vim
+"execute pathogen#infect()
 filetype plugin on
 syntax on
 
@@ -43,18 +44,42 @@ set wildmenu                        "visual autocomplete for command menu
 set pastetoggle=<F3>
 
 " Tab Settings
-set tabstop=2 expandtab             "4 space tabs, expand tabs to spaces
+set tabstop=4 expandtab             "4 space tabs, expand tabs to spaces
 set shiftround                      "Shifts move to indent location
 set rtp+=~/.fzf
 
 "Strip whitespace from end of lines when writing file
 autocmd BufWritePre * :%s/\s\+$//e
 
-call pathogen#helptags()
+"call pathogen#helptags()
 
 " Map Key Settings
 inoremap kj <Esc>
 "Remap ESC key to 'kj'
 
-map <C-n> : NERDTreeTabsToggle<CR>
+call plug#begin('~/.vim/plugged')
 
+Plug 'junegunn/vim-easy-align'
+Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+Plug 'itchyny/lightline.vim'
+
+Plug 'sheerun/vim-polyglot'
+
+Plug 'preservim/nerdcommenter'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'taketwo/vim-ros'
+
+Plug 'airblade/vim-gitgutter'
+
+call plug#end()
