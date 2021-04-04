@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/alice/.ssh'
 let g:netrw_dirhist_2='/home/alice/Downloads/dotfiles/.git'
 let g:netrw_dirhist_3='/home/alice/.config/nvim'
+let g:netrw_dirhist_4='/home/alice/kef_env/catkin_ws/build/opencv3_catkin/opencv3_src'

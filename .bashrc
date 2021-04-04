@@ -120,13 +120,30 @@ if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
 fi
 
 export TERM=xterm-256color
-source /opt/ros/melodic/setup.bash
+#source /opt/ros/melodic/setup.bash
 
-export PATH="/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/alice/.vimpkg/bin"
+#export PATH="/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/alice/.vimpkg/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/alice/.vimpkg/bin"
 export PATH=/home/alice/.local/bin:$PATH:/usr/local/cuda/bin
 export PYTHONPATH=/home/alice/.local/lib/python2.7:$PYTHONPATH
-export KEF_ENV=/home/alice/kef_env
-source /opt/ros/melodic/setup.bash
-source /home/alice/kef_env/catkin_ws/devel/setup.bash
+#export KEF_ENV=/home/alice/kef_env
+#source /opt/ros/melodic/setup.bash
+#source /home/alice/kef_env/catkin_ws/devel/setup.bash
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/alice/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/alice/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/alice/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/alice/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

@@ -13,27 +13,26 @@ do
   compinit
 done
 
-# Git aliases
-alias ga='git add -A'
-alias gp='git push'
-alias gl='git log'
-alias gs='git status'
-alias gd='git diff'
-alias gm='git commit -m'
-alias gma='git commit -am'
-alias gb='git branch'
-alias gc='git checkout'
-alias gra='git remote add'
-alias grr='git remote rm'
-alias gpu='git pull'
-alias gcl='git clone'
+#Aliases
+
+alias v="nvim"
+alias matlab="/usr/local/MATLAB/R2020b/bin/matlab"
+#alias airsim='rosrun grand_prix_ros grand_prix_ros_node _mode:=airsim _with_low_level_controller:=false _left_calibration:=camchain-airsim-left.yaml _right_calibration:=camchain-airsim-right.yaml'
+#alias kitti='rosrun grand_prix_ros grand_prix_ros_node _mode:=kitti _with_low_level_controller:=false _left_calibration:=kitti_0930_left.yaml _right_calibration:=kitti_0930_right.yaml'
+#alias kitti2='rosrun grand_prix_ros grand_prix_ros_node _mode:=kitti _with_low_level_controller:=false _left_calibration:=kitti_0926_left.yaml _right_calibration:=kitti_0926_right.yaml'
+#alias grebe='rosrun grand_prix_ros grand_prix_ros_node _mode:=grebe_unrect _with_low_level_controller:=false _left_calibration:=mynt_grebe_1_unrect_left.yaml _right_calibration:=mynt_grebe_1_unrect_right.yaml'
+#alias euroc='rosrun grand_prix_ros grand_prix_ros_node _mode:=euroc _with_low_level_controller:=false _left_calibration:=cam0_cal.yaml _right_calibration:=cam1_cal.yaml'
+#alias julia="/home/alice/Desktop/julia-1.5.3/bin/julia"
+alias src_kef="source /home/alice/Desktop/kef_env/kef_ws/install/setup.zsh"
+alias src_warm="source /home/alice/Desktop/kef_env/warm_dep_ws/install/setup.zsh"
 
 compinit -C
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="af-magic"
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENT=(dir vcs)
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENT=(status)
 #POWERLEVEL9K_DISABLE_PROMPT=true
@@ -147,22 +146,37 @@ export VISUAL=$EDITOR
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/admin/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/admin/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/admin/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/admin/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+#__conda_setup="$('/home/alice/anaconda5/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+    #eval "$__conda_setup"
+#else
+    #if [ -f "/home/alice/anaconda3/etc/profile.d/conda.sh" ]; then
+        #. "/home/alice/anaconda3/etc/profile.d/conda.sh"
+    #else
+        #export PATH="/home/alice/anaconda3/bin:$PATH"
+    #fi
+#fi
+#unset __conda_setup
 # <<< conda initialize <<<
 export PATH=/home/alice/.local/bin:$PATH:/usr/local/cuda/bin
-export PYTHONPATH=/home/alice/.local/lib/python2.7:$PYTHONPATH
-export KEF_ENV=/home/alice/kef_env
-source /opt/ros/melodic/setup.zsh
-source /home/alice/kef_env/catkin_ws/devel/setup.zsh
+export PATH=/opt/firefox/firefox:$PATH
+#export PYTHONPATH=/home/alice/anaconda3/pkgs:/home/alice/.local/lib/python2.7
+#source /opt/ros/melodic/setup.zsh
+#source /home/alice/kef_env/catkin_ws/devel/setup.zsh
+#export PYTHONPATH=/home/alice/.local/lib/python3.6:$PYTHONPATH
+export KEF_ENV=/home/alice/Desktop/kef_env
+#export SLAM=/home/alice/Documents/slam
+#export CPHOTO=/home/alice/Documents/comp_photo
+#export GRAPHICS=/home/alice/Documents/graphics
+export SCOTTY=/home/alice/Documents/graphics/Scotty3D-dev
+export EVAL=/home/alice/kef_env/evaluate_depth
+export PYTHONPATH=/home/alice/.local/lib/python3.6
 
+export ROS_PYTHON_VERSION=3
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:/usr/local/cuda/bin
+
+export PATH=/home/alice/.cargo/bin:$PATH
+#if [ -f /usr/bin/screenftech ]; then screenfetch; fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#source /opt/ros/eloquent/setup.zsh
